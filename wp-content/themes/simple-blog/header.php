@@ -42,17 +42,45 @@
                 <div class="head-top">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 text-center">
-                            <a href="tel:(020)95890188" class="top-mail"><i class="fa fa-phone"></i> (020) 9589 0188</a>
+                            <a href="tel:<?php echo get_theme_mod( "contact_phone" );?>" class="top-mail"><i class="fa fa-phone"></i> <?php echo get_theme_mod( "contact_phone" );?></a>
                         </div>
                         <div class="col-lg-5 col-md-5 text-center d-none d-lg-block">
-                            <span class="top-addr"><i class="fa fa-map-marker"></i> 41 Clun Street, Sheffield, S4 7JS.</span>
+                            <span class="top-addr"><i class="fa fa-map-marker"></i> <?php echo get_theme_mod( "contact_address" );?>.</span>
                         </div>
                         <div class="col-lg-3 col-md-3 text-right d-none d-lg-block">
                             <div class="social">
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-youtube"></a>
+                                <?php 
+                                    if(!empty(get_theme_mod( "simple_blog_facebook_ads" ))){
+                                            ?>
+                                            <a href="<?php echo get_theme_mod( "simple_blog_facebook_ads" )?>" class="fa fa-facebook"></a>
+                                            <?php
+                                    }
+                                ?>
+                                <?php 
+                                    if(!empty(get_theme_mod( "simple_blog_twitter_ads" ))){
+                                            ?>
+                                            <a href="<?php echo get_theme_mod( "simple_blog_twitter_ads" )?>" class="fa fa-twitter"></a>
+                                            <?php
+                                    }
+                                ?>
+                                <?php 
+                                    if(!empty(get_theme_mod( "simple_blog_instagram_ads" ))){
+                                            ?>
+                                            <a href="<?php echo get_theme_mod( "simple_blog_instagram_ads" )?>" class="fa fa-instagram"></a>
+                                            <?php
+                                    }
+                                ?>
+                                <?php 
+                                    if(!empty(get_theme_mod( "simple_blog_youtube_ads" ))){
+                                            ?>
+                                            <a href="<?php echo get_theme_mod( "simple_blog_youtube_ads" )?>" class="fa fa-youtube"></a>
+                                            <?php
+                                    }
+                                ?>
+                                
+                                
+                                
+                                
                             </div>
                         </div>
                     </div>

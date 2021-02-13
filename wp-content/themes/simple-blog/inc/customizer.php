@@ -31,6 +31,105 @@ function simple_blog_customize_register( $wp_customize ) {
 			)
 		);
 	}
+	 // -------- Contact details section ----------
+	 $wp_customize->add_section('simple_blog_contact_handle', array(
+        'title'         => __('Contact Details', 'simple_blog'),
+        'description'   => '',
+        'priority'      => 70,
+    ));
+   // Contact Phone
+    $wp_customize->add_setting('contact_phone', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_contact_phone', array(
+        'label'      => __('Phone', 'simple-blog'),
+        'section'    => 'simple_blog_contact_handle',
+        'settings'   => 'contact_phone',
+    ));
+   // Email
+    $wp_customize->add_setting('contact_email', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_contact_email', array(
+        'label'      => __('Contact Email', 'simple_blog'),
+        'section'    => 'simple_blog_contact_handle',
+        'settings'   => 'contact_email',
+    ));
+	// Address 
+	$wp_customize->add_setting('contact_address', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_contact_address', array(
+        'label'      => __('Contact Address', 'simple_blog'),
+        'section'    => 'simple_blog_contact_handle',
+        'settings'   => 'contact_address',
+    ));
+    // -------- Contact details section ----------
+
+    // -------- Social media section ----------
+    // facebook
+    $wp_customize->add_section('simple_blog_socialmedia_handle', array(
+        'title'         => __('Social media Details', 'simple_blog'),
+        'description'   => '',
+        'priority'      => 70,
+    ));
+    $wp_customize->add_setting('simple_blog_facebook_ads', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_facebook', array(
+        'label'      => __('Facebook Ads', 'simple_blog'),
+        'section'    => 'simple_blog_socialmedia_handle',
+        'settings'   => 'simple_blog_facebook_ads',
+    ));
+    // Instagram
+    $wp_customize->add_setting('simple_blog_instagram_ads', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_instagram', array(
+        'label'      => __('Instagram Ads', 'simple_blog'),
+        'section'    => 'simple_blog_socialmedia_handle',
+        'settings'   => 'simple_blog_instagram_ads',
+    ));
+	// twiiter
+    $wp_customize->add_setting('simple_blog_twitter_ads', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_twitter', array(
+        'label'      => __('Twitter Ads', 'simple_blog'),
+        'section'    => 'simple_blog_socialmedia_handle',
+        'settings'   => 'simple_blog_twitter_ads',
+    ));
+	// twiiter
+    $wp_customize->add_setting('simple_blog_youtube_ads', array(
+        'default'       => '',
+        'capability'    => 'edit_theme_options',
+        'type'          => 'theme_mod'
+
+    ));
+    $wp_customize->add_control('simple_blog_youtube', array(
+        'label'      => __('You Tube Ads', 'simple_blog'),
+        'section'    => 'simple_blog_socialmedia_handle',
+        'settings'   => 'simple_blog_youtube_ads',
+    ));
+	// -------- Social media section ----------
 }
 add_action( 'customize_register', 'simple_blog_customize_register' );
 
