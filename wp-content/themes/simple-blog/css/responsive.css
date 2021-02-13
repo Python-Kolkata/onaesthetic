@@ -1,0 +1,204 @@
+@media only screen and (min-width: 1440px){
+
+}
+@media only screen and (min-width: 1600px){
+
+}
+@media only screen and (min-width: 1800px){
+
+}
+@media (min-width:1200px) {
+ .container,
+ .container-lg,
+ .container-md,
+ .container-sm,
+ .container-xl {
+  max-width:1170px
+ }
+}
+@media only screen and (max-width: 1199px){
+    nav.navbar-light .navbar-nav .nav-link {
+        padding: 8px 6px;
+    }
+    .banner h1 {
+        font-size: 54px;
+    }
+    
+}
+@media only screen and (min-width: 992px){
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+}
+@media only screen and (max-width: 991px){
+    header::after {
+        width: 20%;
+        height: 30px;
+    }
+    .head-top {
+        min-height: inherit;
+    }
+    .top-mail {
+        padding: 5px 0;
+    }
+    .head-top::before {
+        border-top: 30px solid #363639;
+        border-left: 32px solid transparent;
+        position: absolute;
+        left: -32px;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+        padding: 0;
+        margin-left: auto;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 16, 29, 1%35' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        top: 138px;
+        z-index: 9;
+        background: rgba(0,0,0,0.90);
+    }
+    nav.navbar-light .navbar-nav .nav-link:hover, nav.nav-item.active > .nav-link, nav.navbar-light .navbar-nav .active > .nav-link {
+        border-radius: 0;
+    }
+    nav.navbar-light .navbar-nav .nav-link, nav.navbar-light .navbar-nav .nav-link:focus {
+        color: #b4c2cc;
+    }
+    .banner h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .bnr-shadow {
+        padding: 20px 60px;
+    }
+    .megaSubmenu > .sub-menu, .sub-menu {
+        padding: 0 0 0;
+        position: relative;
+        box-shadow: 0 0 0;
+        width: 100%;
+        display: none;
+    }
+    .sub-menu li {
+        border-bottom: 1px solid rgba(30, 30, 30, 0.95);
+        color: #b4c2cc;
+    }
+    .sub-menu li a {
+        background: transparent;
+        color: #b4c2cc;
+    }
+    .sub-menu li a:hover {
+        background: #b4dcde;
+        color: #516472;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    footer ul {
+        margin: 0 0 22px;
+    }
+    .content {
+        padding: 60px 0;
+    }
+    .offer-sec {
+        margin-top: 0;
+    }
+    .text-box p {
+        margin-bottom: 20px;
+    }
+    .content h2 {
+        margin-top: 20px;
+    }
+    .bnr-shadow {
+        padding: 20px 20px;
+        background: rgba(0,0,0,0.5);
+    }
+    .bnr-shadow {
+        padding: 15px 15px;
+        background: rgba(0,0,0,0.5);
+    }
+    .banner h1 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .banner h1 span {
+        font-size: 35px;
+        line-height: 23px;
+        display: block;
+    }
+    .btn-white {
+        font-size: 14px;
+        padding: 10px 32px;
+    }
+    .offer-txt-bx {
+        padding: 30px 0 0;
+    }
+    .panel-default > .panel-heading a {
+        padding: 15px 70px 15px 15px;
+    }
+    .panel-title {
+        font-size: 16px;
+    }
+    .panel-body {
+        padding: 15px;
+    }
+    .foot-top {
+        padding: 40px 0 40px;
+    }
+}
+@media only screen and (min-width: 641px){
+
+
+}
+@media only screen and (max-width: 480px){ 
+    .header-mid {
+        padding: 15px 0;
+    }
+    .tel-top {
+        padding: 0px 0;
+    }
+    .navbar-collapse {
+        top: 20vh;
+    }
+    .bnr-shadow {
+        padding: 15px 15px;
+    }
+    .banner h1 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .content {
+        padding: 30px 0;
+    }
+    .banner h1 span {
+        font-size: 29px;
+    }
+    .banner .btn_theme {
+        padding: 8px 17px;
+        font-size: 13px;
+    }
+    .foot-top {
+        padding: 72px 0 15px;
+    }
+    .foot-top h2 {
+        margin-bottom: 22px;
+    }
+    .social {
+        margin-bottom: 30px;
+    }
+    .btn_theme {
+        padding: 9px 15px;
+    }
+
+
+}
+@media only screen and (max-width: 425px){
+}
+@media only screen and (max-width: 375px){
+}
