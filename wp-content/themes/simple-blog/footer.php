@@ -15,64 +15,55 @@
     <div class="foot-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <h2>Get In Touch</h2>
-                    <div class="cont-foot">
-                        <p><i class="markar-i"></i><?php echo get_option( 'contact_address', '' )?></p>
-                        <p><i class="call-i"></i><a href="tel:<?php echo get_option( 'contact_phone', '' )?>"><?php echo get_option( 'contact_phone', '' )?></a></p>
-                        <p><i class="envelope-i"></i><a href="mailto:<?php echo get_option( 'contact_email', '' )?>"><?php echo get_option( 'contact_email', '' )?></a></p>
-                    </div>
-                    <div class="social d-none d-md-block">
-                        <a href="#" class="fa fa-facebook ml-0"></a>
+                <div class="col-lg-5 col-md-5 pr-md-5">
+                    <span class="foot-title">About ON Aesthetic</span>
+                    <p>At ON Aesthetic, we offer our patients the treatments they deserve and help them look their best in no time. By using state-of-art techniques and technology, we make sure our patients receive the best possible experience and get the results they always wanted.</p>
+                    <div class="foot-social">
+                        <a href="#" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google-plus"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
                     </div>
-                    
                 </div>
-                <div class="col-lg-3 col-md-3 pl-lg-5 pl-md-5">
-                    <h2>quick links</h2>
-                    <?php 
-								$args = [
-									'menu'=>'Footer Menu1',
-									'menu_class'=>false,
-									'container'=>false,
-									'walker' => new OWCtheme_Walker_Footer_Menu()
-								];
-								wp_nav_menu($args)
-		  				?>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <h2>treatments</h2>
-                    <?php 
-								$args = [
-									'menu'=>'Footer Menu2',
-									'menu_class'=>false,
-									'container'=>false,
-									'walker' => new OWCtheme_Walker_Footer_Menu()
-								];
-								wp_nav_menu($args)
-		  				?>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <h2>opening hours</h2>
-                    <span class="sdl-day">
-                        Mondays to Fridays <br> from 9:00 am – 5:30 pm <br> Weekends by appointment
-                    </span>
-					<div class="social d-md-none">
-                        <a href="#" class="fa fa-facebook ml-0"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google-plus"></a>
+                <div class="col-lg-7 col-md-7">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <span class="foot-title">Quick Links</span>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Why ON Aesthetic</a></li>
+                                <li><a href="#">Prices</a></li>
+                                <li><a href="#">What We Offer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <span class="foot-title">What We Offer</span>
+                            <ul>
+                                <li><a href="#">Anti-Wrinkle Injections</a></li>
+                                <li><a href="#">Dermal Fillers</a></li>
+                                <li><a href="#">Platelet Rich Plasma (PRP)</a></li>
+                                <li><a href="#">Mesotherapy</a></li>
+                                <li><a href="#">Microdermabrasion</a></li>
+                                <li><a href="#">PDO Threads</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 col-md-4">
+                            <span class="foot-title">Get In Touch With Us</span>
+                            <div class="cont-foot">
+                                <p><i class="fa fa-phone"></i><a href="tel:(020)95890188">(020) 9589 0188</a></p>
+                                <p><i class="fa fa-envelope"></i><a href="mailto:info@ON Aesthetic.com">info@ON Aesthetic.com</a></p>
+                                <p><i class="fa fa-map-marker"></i>41 Clun Street, Sheffield, S4 7JS.</p>
+                            </div>
+                        </div>
                     </div>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/care-logo.png" alt="care-logo" class="img-fluid mb-4">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/gdc-logo.png" alt="gdc-logo" class="img-fluid mb-4">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/nhs-logo.png" alt="nhs-logo" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
     <div class="foot-btm">
         <div class="container">
-            <p>Copyright © <?php echo date('Y')?> <?php echo bloginfo( )?>. All Rights Reserved.</p>
+            <p>© 2021, <span>ON Aesthetic</span>. All Rights Reserved</p>
         </div>
     </div>
 </footer>
