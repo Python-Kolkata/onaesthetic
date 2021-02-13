@@ -1,0 +1,2 @@
+[13-Feb-2021 10:00:43 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/onaesthetic/public_html/wp-content/themes/simple-blog/inc/mega-menu.php on line 400
+[13-Feb-2021 10:00:43 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/onaesthetic/public_html/wp-content/themes/simple-blog/inc/mega-menu.php on line 406
