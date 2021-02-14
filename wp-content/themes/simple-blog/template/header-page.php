@@ -12,21 +12,15 @@ $url = $image[0];
     $image_title = '';
 }
 ?>
-<section class="banner inr-banner">
-    <img src="<?php echo $url?>" alt="<?php echo $image_alt?>" title="<?php echo $image_title?>">
+<section class="banner inn-banner">
+<img src="<?php echo $url?>" alt="<?php echo $image_alt?>" title="<?php echo $image_title?>">
     <div class="bnr-overlay">
         <div class="container">                
             <div class="row align-items-center">
-                <div class="col-xl-7 col-lg-7 col-md-8">
-                    <?php 
-                        $words    = explode( ' ', the_title( '', '',  false ) );
-                        $words[0] = '<span>' . $words[0] . '</span>';
-                        
-                        $title    = implode( ' ', $words );
-                        
-
-                    ?>
-                    <h1><?php echo  $title;?></h1>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-9">
+                    <div class="bnr-shadow">
+                    <h1><?php echo  get_the_title();?></h1>
+                    </div>
                 </div>
             </div>
         </div>
