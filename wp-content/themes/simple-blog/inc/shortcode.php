@@ -10,7 +10,7 @@ function address_sc_callback($atts, $content = null)
 	), $atts );
    
     ob_start();
-    if($a['icon']==true){
+    if($a['icon']=="true"){
        
         ?>
 
@@ -19,7 +19,7 @@ function address_sc_callback($atts, $content = null)
         
         
  
-    }else{
+    }else if($a['icon']=="false"){
         ?>
         <?php echo get_theme_mod( "contact_address" );?>
         <?php
@@ -38,9 +38,9 @@ function phone_sc_callback($atts, $content = null)
 		'icon' => "",
 		'link_class'=>''
 	), $atts );
- 
+    
     ob_start();
-    if($a['icon']==true){
+    if($a['icon']=="true"){
        
         ?>
         <a href="tel:<?php echo get_theme_mod( "contact_phone" );?>" class="<?php echo $a['link_class']?>"><i class="fa fa-phone"></i><?php echo get_theme_mod( "contact_phone" );?></a>
@@ -49,7 +49,7 @@ function phone_sc_callback($atts, $content = null)
         
         
  
-    }elseif($a['icon']==false){
+    }elseif($a['icon']=="false"){
         ?>
         <a href="tel:<?php echo get_theme_mod( "contact_phone" );?>" class="<?php $link_class?>"><?php echo get_theme_mod( "contact_phone" );?></a>
         <?php
@@ -114,7 +114,7 @@ function email_sc_callback($atts, $content = null)
 	), $atts );
  
     ob_start();
-    if($a['icon']==true){
+    if($a['icon']=="true"){
        
         ?>
         <a href="mailto:<?php echo get_theme_mod( "contact_email" );?>" class="<?php echo $a['link_class']?>"><i class="fa fa-phone"></i><?php echo get_theme_mod( "contact_email" );?></a>
@@ -123,7 +123,7 @@ function email_sc_callback($atts, $content = null)
         
         
  
-    }elseif($a['icon']==false){
+    }elseif($a['icon']=="false"){
         ?>
         <a href="mailto:<?php echo get_theme_mod( "contact_email" );?>" class="<?php $link_class?>"><?php echo get_theme_mod( "contact_email" );?></a>
         <?php
