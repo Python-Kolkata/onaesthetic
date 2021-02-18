@@ -48,42 +48,7 @@
         </div>
     </div>
 </footer>
-<!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Book Now</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="modal-form">
-			  <?php echo do_shortcode('[contact-form-7 id="72" title="Contact page"]')?>
-<!--             <div class="form-group">
-                <input type="text" value="" name="" class="form-control" placeholder="Full Name">
-            </div>
-            <div class="form-group">
-                <input type="text" value="" name="" class="form-control" placeholder="Email ID">
-            </div>
-            <div class="form-group">
-                <input type="text" value="" name="" class="form-control" placeholder="Phone No.">
-            </div>
-            <div class="form-group">
-                <textarea class="form-control textarea" placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="btn btn_theme btn-submit btn-block" type="submit"><span>book now</span></button>
-            </div> -->
-                </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+
 <?php wp_footer(); ?>
 <script>
       (function($) { // Begin jQuery
@@ -110,6 +75,26 @@
   }); // end DOM ready
 })(jQuery); // end jQuery
   </script>
-
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Book Now</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="modal-form">
+            <?php echo do_shortcode( '[contact-form-7 id="51" title="Contact"] ')?>
+                </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </body>
 </html>
