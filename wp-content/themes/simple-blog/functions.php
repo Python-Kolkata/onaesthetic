@@ -181,7 +181,10 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
+/**
+ * Customizer Shortcodes.
+ */
+require get_template_directory() . '/inc/shortcode.php';
 /**
  * Load Jetpack compatibility file.
  */
@@ -210,5 +213,5 @@ function link_words( $text ) {
 	$text = str_replace( array_keys($replace), $replace, $text );
 	return $text;
 }
-add_filter( 'the_content', 'link_words' );
-add_filter( 'the_excerpt', 'link_words' );
+// add_filter( 'the_content', 'link_words' );
+// add_filter( 'the_excerpt', 'link_words' );

@@ -26,8 +26,13 @@
  <header>
  <?php 
 	$logo = get_theme_mod( 'custom_logo' );
-	$image = wp_get_attachment_image_src( $logo , 'full' );
-	$logo_url = $image[0];
+    $logo_url= get_template_directory_uri().'/images/on-aesthetic-home-mobile-banner.png';
+    if($logo){
+        $image = wp_get_attachment_image_src( $logo , 'full' );
+        $logo_url = $image[0];
+    }
+
+	
 		
 	?>
     <div class="container">
@@ -42,10 +47,10 @@
                 <div class="head-top">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 text-center">
-                            <a href="tel:<?php echo get_theme_mod( "contact_phone" );?>" class="top-mail"><i class="fa fa-phone"></i> <?php echo get_theme_mod( "contact_phone" );?></a>
+                     <?php echo do_shortcode( '[phone icon="true" link_class="top-mail"]' )?>
                         </div>
                         <div class="col-lg-5 col-md-5 text-center d-none d-lg-block">
-                            <span class="top-addr"><i class="fa fa-map-marker"></i> <?php echo get_theme_mod( "contact_address" );?>.</span>
+                            <span class="top-addr"><?php echo do_shortcode( '[address icon="true"]' )?></span>
                         </div>
                         <div class="col-lg-3 col-md-3 text-right d-none d-lg-block">
                             <div class="social">

@@ -16,46 +16,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 pr-md-5">
-                    <span class="foot-title">About ON Aesthetic</span>
-                    <p>At ON Aesthetic, we offer our patients the treatments they deserve and help them look their best in no time. By using state-of-art techniques and technology, we make sure our patients receive the best possible experience and get the results they always wanted.</p>
-                    <div class="foot-social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                        <a href="https://instagram.com/on_aesthetic_" class="fa fa-instagram"></a>
-                    </div>
+                    <?php
+                      dynamic_sidebar( 'footer-area-1' );
+                    ?>
                 </div>
                 <div class="col-lg-7 col-md-7">
                     <div class="row">
                         <div class="col-lg-3 col-md-4">
-                            <span class="foot-title">Quick Links</span>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Why ON Aesthetic</a></li>
-                                <li><a href="#">Prices</a></li>
-                                <li><a href="#">What We Offer</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
+                        <?php
+                          dynamic_sidebar( 'footer-area-2' );
+                        ?>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <span class="foot-title">What We Offer</span>
-                            <ul>
-                                <li><a href="#">Anti-Wrinkle Injections</a></li>
-                                <li><a href="#">Dermal Fillers</a></li>
-                                <li><a href="#">Platelet Rich Plasma (PRP)</a></li>
-                                <li><a href="#">Mesotherapy</a></li>
-                                <li><a href="#">Microdermabrasion</a></li>
-                                <li><a href="#">PDO Threads</a></li>
-                            </ul>
+                          <?php
+                            dynamic_sidebar( 'footer-area-3' );
+                          ?>
                         </div>
                         <div class="col-lg-5 col-md-4">
-                            <span class="foot-title">Get In Touch With Us</span>
-                            <div class="cont-foot">
-                                <p><i class="fa fa-phone"></i><a href="tel:07540144557">07540144557</a></p>
-                                <p><i class="fa fa-envelope"></i><a href="mailto:info@onaesthetic.com">info@onaesthetic.com</a></p>
-                                <p><i class="fa fa-map-marker"></i>London, United Kingdom</p>
-                            </div>
+                          <?php
+                              dynamic_sidebar( 'footer-area-4' );
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -64,7 +44,7 @@
     </div>
     <div class="foot-btm">
         <div class="container">
-            <p>© 2021, <span>ON Aesthetic</span>. All Rights Reserved</p>
+            <p>© <?=date('Y')?>, <span>ON Aesthetic</span>. All Rights Reserved</p>
         </div>
     </div>
 </footer>

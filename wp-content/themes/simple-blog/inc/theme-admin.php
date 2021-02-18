@@ -32,3 +32,20 @@ function my_general_settings_fields_html3()
     $contact_phone = get_option( 'contact_phone', '' );
     echo '<input type="text" id="contact_phone" name="contact_phone" value="' . $contact_phone . '" />';
 }
+
+add_action( 'widgets_init', 'footer_widgets' );
+function footer_widgets()
+    {
+        for ($i = 1; $i <= 4; $i++)
+        {
+            register_sidebar(array(
+                'name' 			=> __('Footer','simple-blog') .' | #'.$i,
+                'id' 			=> 'footer-area-'.$i,
+                'description'	=> __('Footer widgets area','simple-blog'),
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' 	=> '</div>',
+                'before_title' 	=> '<span class="foot-title">',
+                'after_title' 	=> '</span>',
+            ));
+        }
+    }
