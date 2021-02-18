@@ -22,6 +22,7 @@
                         <a href="#" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
                         <a href="#" class="fa fa-linkedin"></a>
+                        <a href="https://instagram.com/on_aesthetic_" class="fa fa-instagram"></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7">
@@ -51,9 +52,9 @@
                         <div class="col-lg-5 col-md-4">
                             <span class="foot-title">Get In Touch With Us</span>
                             <div class="cont-foot">
-                                <p><i class="fa fa-phone"></i><a href="tel:(020)95890188">(020) 9589 0188</a></p>
-                                <p><i class="fa fa-envelope"></i><a href="mailto:info@ON Aesthetic.com">info@ON Aesthetic.com</a></p>
-                                <p><i class="fa fa-map-marker"></i>41 Clun Street, Sheffield, S4 7JS.</p>
+                                <p><i class="fa fa-phone"></i><a href="tel:07540144557">07540144557</a></p>
+                                <p><i class="fa fa-envelope"></i><a href="mailto:info@onaesthetic.com">info@onaesthetic.com</a></p>
+                                <p><i class="fa fa-map-marker"></i>London, United Kingdom</p>
                             </div>
                         </div>
                     </div>
